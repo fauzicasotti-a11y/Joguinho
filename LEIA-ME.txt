@@ -1,0 +1,30 @@
+TORRE ETERNA - PACOTE PARA INSTALAR NO CELULAR
+==============================================
+
+Este pacote tem o jogo pronto para virar um "app" instalavel (PWA):
+  index.html, manifest.webmanifest, sw.js (funciona offline) e os icones.
+
+PASSO A PASSO (o mais simples, gratis, sem programar)
+-----------------------------------------------------
+1. Descompacte o arquivo .zip no computador (ou no celular).
+2. Hospede a PASTA inteira em um servico gratuito. Opcoes faceis:
+   - Netlify Drop: acesse app.netlify.com/drop e arraste a pasta. Em segundos voce recebe um link https.
+   - Cloudflare Pages ou GitHub Pages: tambem gratuitos.
+3. Abra o link no celular:
+   - ANDROID (Chrome): menu (tres pontinhos) > "Instalar app" ou "Adicionar a tela inicial".
+   - iPHONE (Safari): botao Compartilhar > "Adicionar a Tela de Inicio".
+4. O icone do castelo aparece na tela inicial. O jogo abre em tela cheia e funciona sem internet
+   depois da primeira abertura.
+
+OBSERVACOES
+-----------
+- O progresso (nivel de conta, cristais, loja) fica salvo no proprio aparelho. Se voce limpar os dados
+  do navegador ou trocar de aparelho, comeca do zero.
+- Para atualizar o jogo, hospede de novo os arquivos novos (e, se quiser forcar a atualizacao do
+  cache, mude o numero em sw.js: const CACHE = "torre-eterna-v2").
+
+PARA PUBLICAR NA PLAY STORE / APP STORE (depois)
+-------------------------------------------------
+- Android: com o site no ar, use o PWABuilder (pwabuilder.com) para gerar o pacote Android (.aab).
+  A conta de desenvolvedor do Google Play custa uma taxa unica (cerca de US$ 25).
+- iPhone: precisa empacotar com Capacitor e de uma conta Apple Developer (cerca de US$ 99 por ano).
